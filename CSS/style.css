@@ -1,0 +1,121 @@
+/*Colors used:
+Primary Color: rgba(52,92,149,100%); rgba(107,122,143,100%); rgba(159,79,13,100%); rgba(242,242,242,100%); rgba(34,34,34,100%)
+Secondary Color: rgba(247,136,47,100%); rgba(247,195,49,100%); rgba(220,199,170,100%);
+*/
+body {
+  background-color: rgba(242, 242, 242, 100%);
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(34, 34, 34, 100%);
+}
+h1,
+h2 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 600;
+}
+h2 {
+  font-size: 2.25em;
+  font-weight: 500;
+}
+body {
+  background-color: rgba(242, 242, 242, 100%);
+  font-family: "Raleway", sans-serif;
+  font: size 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(34, 34, 34, 100%);
+}
+h3,
+h4,
+h5 {
+  line-height: 1.4;
+}
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+h5 {
+  font: size 1em;
+  font-weight: 400;
+}
+body {
+  background-color: rgba(242, 242, 242, 100%);
+  font-family: "Maitree", serif;
+  font: size 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(34, 34, 34, 100%);
+}
+p {
+  line-height: 1.4;
+  font: size 1em;
+  font-weight: 300;
+}
+img {
+  width: 100%;
+}
+a {
+  font-weight: 500;
+  color: rgba(52, 92, 149, 100%);
+  text-decoration: none;
+}
+a:visited {
+  color: rgba(52, 92, 149, 100%);
+}
+a:hover {
+  color: rgba(107, 122, 143, 100%);
+  text-decoration: underline;
+}
+a:active {
+  color: rgba(159, 79, 13, 100%);
+}
+.button {
+  display: inline-block;
+  background-color: rgba(52, 92, 149, 100%);
+  color: rgba(242, 242, 242, 100%);
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid rgba(107, 122, 143, 100%);
+  transition: 0.2s opacity;
+}
+.button:visited {
+  color: rgba(242, 242, 242, 100%);
+  font-weight: 400;
+}
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button:active {
+  opacity: 1;
+  text-decoration: none;
+}
+.button.contact {
+  background-color: rgba(247, 136, 47, 100%);
+  color: rgba(34, 34, 34, 100%);
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 2px solid rgba(220, 199, 170, 100%);
+}
+.button.contact:visited {
+  color: rgba(34, 34, 34, 100%);
+  font-weight: 400;
+}
+.button.contact:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button.contact:active {
+  opacity: 1;
+  text-decoration: none;
+}
