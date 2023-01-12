@@ -1,18 +1,19 @@
 /*Colors used:
-Primary Color: rgba(52,92,149,100%); rgba(107,122,143,100%); rgba(159,79,13,100%); rgba(242,242,242,100%); rgba(34,34,34,100%)
-Secondary Color: rgba(247,136,47,100%); rgba(247,195,49,100%); rgba(220,199,170,100%);
+/*$rich-black-fogra-29: rgba(0, 21, 36, 1);
+$ming: rgba(21, 97, 109, 1);
+$red: rgba(255, 0, 0, 1);
+$amber-sae-ece: rgba(255, 125, 0, 1);
+$kobe: rgba(120, 41, 15, 1);
+$misty-rose: rgba(251, 227, 219, 1);
+white:rgba(242,242,242,100%); 
+black:rgba(34,34,34,100%)
 */
-body {
-  background-color: rgba(242, 242, 242, 100%);
-  font-family: "Playfair Display", serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: rgba(34, 34, 34, 100%);
-}
 h1,
 h2 {
+  background-color: rgba(242, 242, 242, 100%);
+  font-family: "Playfair Display", serif;
   line-height: 1.4;
+  color: rgba(34, 34, 34, 100%);
 }
 h1 {
   font-size: 2.75em;
@@ -22,18 +23,13 @@ h2 {
   font-size: 2.25em;
   font-weight: 500;
 }
-body {
-  background-color: rgba(242, 242, 242, 100%);
-  font-family: "Raleway", sans-serif;
-  font: size 16px;
-  font-weight: 300;
-  line-height: 1.6;
-  color: rgba(34, 34, 34, 100%);
-}
 h3,
 h4,
 h5 {
+  background-color: rgba(242, 242, 242, 100%);
+  font-family: "Raleway", sans-serif;
   line-height: 1.4;
+  color: rgba(34, 34, 34, 100%);
 }
 h3 {
   font-size: 1.75em;
@@ -44,7 +40,7 @@ h4 {
   font-weight: 400;
 }
 h5 {
-  font: size 1em;
+  font: size 1.25em;
   font-weight: 400;
 }
 body {
@@ -65,27 +61,27 @@ img {
 }
 a {
   font-weight: 500;
-  color: rgba(52, 92, 149, 100%);
+  color: rgba(0, 21, 36, 1);
   text-decoration: none;
 }
 a:visited {
-  color: rgba(52, 92, 149, 100%);
+  color: rgba(0, 21, 36, 1);
 }
 a:hover {
-  color: rgba(107, 122, 143, 100%);
+  color: rgba(21, 97, 109, 1);
   text-decoration: underline;
 }
 a:active {
-  color: rgba(159, 79, 13, 100%);
+  color: rgba(255, 0, 0, 1);
 }
 .button {
   display: inline-block;
-  background-color: rgba(52, 92, 149, 100%);
+  background-color: rgba(21, 97, 109, 1);
   color: rgba(242, 242, 242, 100%);
   font-weight: 400;
   padding: 10px;
   border-radius: 5px;
-  border: 2px solid rgba(107, 122, 143, 100%);
+  border: 2px solid rgba(0, 21, 36, 1);
   transition: 0.2s opacity;
 }
 .button:visited {
@@ -93,7 +89,7 @@ a:active {
   font-weight: 400;
 }
 .button:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   text-decoration: none;
 }
 .button:active {
@@ -101,11 +97,10 @@ a:active {
   text-decoration: none;
 }
 .button.contact {
-  background-color: rgba(247, 136, 47, 100%);
-  color: rgba(34, 34, 34, 100%);
+  background-color: rgba(255, 0, 0, 1);
+  color: rgba(242, 242, 242, 1);
   font-weight: 400;
   text-transform: uppercase;
-  border: 2px solid rgba(220, 199, 170, 100%);
 }
 .button.contact:visited {
   color: rgba(34, 34, 34, 100%);
@@ -118,4 +113,143 @@ a:active {
 .button.contact:active {
   opacity: 1;
   text-decoration: none;
+}
+header {
+  background-color: rgba(251, 227, 219, 1);
+  text-align: center;
+  position: fixed;
+  box-shadow: 2px 5px 11px 0px rgba(34, 34, 34, 0.46);
+  -webkit-box-shadow: 2px 5px 11px 0px rgba(34, 34, 34, 0.46);
+  -moz-box-shadow: 2px 5px 11px 0px rgba(34, 34, 34, 0.46);
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+nav > ul > li > a:visited {
+  color: rgba(0, 21, 36, 1);
+}
+nav > ul > li > a:hover {
+  color: rgba(21, 97, 109, 1);
+  text-decoration: underline;
+}
+nav > ul > li > a:active {
+  color: rgba(255, 0, 0, 1);
+}
+.navigation {
+  margin: 0;
+}
+Selector {
+  margin: 0 auto;
+  position: relative;
+  float: right;
+  width: 80%;
+}
+.main-logo {
+  max-width: 80px;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0;
+}
+#introduction h3 {
+  text-align: center;
+}
+#introduction h5 {
+  text-align: center;
+}
+#project h1 {
+  text-align: center;
+}
+#contact h2 {
+  text-align: center;
+}
+#contact p {
+  text-align: center;
+}
+#P1-FITNICE h1 {
+  text-align: center;
+}
+#intro p {
+  text-align: center;
+}
+#my-process h2 {
+  text-align: center;
+}
+#my-process img {
+  text-align: center;
+}
+#empathize img {
+  text-align: center;
+}
+#ideate img {
+  text-align: center;
+}
+#test-iteration img {
+  text-align: center;
+}
+#final-prototype img {
+  text-align: center;
+}
+#Prototype-link h2 {
+  text-align: center;
+}
+#Prototype-link nav {
+  text-align: center;
+}
+#Prototype-link p {
+  text-align: center;
+}
+#about h1 {
+  text-align: center;
+}
+#about img {
+  text-align: center;
+}
+#my-story h2 {
+  text-align: center;
+}
+#skills-tools h2 {
+  text-align: center;
+}
+#linkedin {
+  height: 40px;
+  width: 40px;
+}
+#instagram {
+  height: 40px;
+  width: 40px;
+}
+#social-media.icons {
+  text-align: center;
+}
+#copyright p {
+  text-align: center;
+}
+#introduction {
+  background-color: rgba(251, 227, 219, 1);
+  padding-top: 191.38px;
+  display: inline-block;
+  width: 100%;
+}
+#introduction h3,
+h5 {
+  background-color: rgba(251, 227, 219, 1);
 }
