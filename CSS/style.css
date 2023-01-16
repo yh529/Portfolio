@@ -56,6 +56,7 @@ p {
   font: size 1em;
   font-weight: 300;
 }
+
 img {
   width: 100%;
 }
@@ -107,7 +108,7 @@ a:active {
   font-weight: 400;
 }
 .button.contact:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   text-decoration: none;
 }
 .button.contact:active {
@@ -151,13 +152,14 @@ Selector {
   margin: 0 auto;
   position: relative;
   float: right;
-  width: 80%;
+  width: 100%;
 }
 .main-logo {
-  max-width: 80px;
+  width: 150px;
   text-align: center;
-  padding: 10px 0 0 0;
+  padding: 10px 0 10px 0;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -169,11 +171,20 @@ Selector {
 .row {
   margin: 25px 0;
 }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#introduction span {
+  display: inline;
+}
 #introduction h3 {
   text-align: center;
 }
-#introduction h5 {
+#introduction p {
   text-align: center;
+  padding: 0 10px;
 }
 #project h1 {
   text-align: center;
@@ -245,11 +256,125 @@ Selector {
 }
 #introduction {
   background-color: rgba(251, 227, 219, 1);
-  padding-top: 191.38px;
+  padding-top: 90px;
   display: inline-block;
   width: 100%;
 }
 #introduction h3,
 h5 {
   background-color: rgba(251, 227, 219, 1);
+}
+.about-container {
+  padding-top: 90px;
+}
+.P1-container {
+  padding-top: 90px;
+}
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {
+    transform: translate (0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/*Medium devices (640px or larger)*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  .main-logo {
+    width: 150px;
+    float: left;
+    padding-left: 10px;
+  }
+  .header-container nav {
+    width: auto;
+    float: right;
+    padding-top: 5px;
+    margin-top: 4px;
+  }
+  #introduction {
+    padding-top: 100px;
+  }
+  #introduction span {
+    display: block;
+  }
+  body {
+    font-size: 18px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-4 {
+    width: 30%;
+  }
+  .row h3 {
+    text-align: center;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*Large devices (1024px or larger)*/
+@media only screen and (min-width: 1024px) {
+  .col-lg-8 {
+    width: 50%;
+  }
+}
+
+/*X-Large devices (1440px or larger)*/
+@media only screen and (min-width: 1440px) {
+  .col-xl-4 {
+    width: 50%;
+  }
+}
+
+/*Extra-Large devices (1920px or larger)*/
+@media only screen and (min-width: 1920px) {
+}
+[class*="col-"] {
+  float: left;
+  padding: 0 10px;
 }
