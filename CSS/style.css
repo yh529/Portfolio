@@ -172,9 +172,6 @@ nav > ul {
 .navtoggle.responsive li {
   display: block;
 }
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
@@ -303,6 +300,9 @@ Selector {
 }
 .P1-container {
   padding-top: 90px;
+}
+#Prototype-link a {
+  font-size: 1.25em;
 }
 .berlin-illustration {
   width: 100%;
