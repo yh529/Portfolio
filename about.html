@@ -6,22 +6,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@300;400;500&family=Playfair+Display:wght@400;500;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1fabe211cb.js" crossorigin="anonymous"></script>
     <title>Yudan H. Dunn, UX/UI Designer</title>
   </head>
   <body id="main-content">
     <header>
       <div class="header-container">
-        <picture>
-           <img class="main-logo" src="img/Logo/Logo.svg" alt="My Logo" />
-        </picture>
-        <nav>
-          <ul class="navigation">
-            <li><a href="Index.html">Project</a></li>
-            <li><a href="drawing.html">Drawing</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="Index.html"><img class="main-logo" src="img/Logo/Logo.svg" alt="My Logo" /></a>
+          <nav>
+            <ul class="navigation">
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="drawing.html">Drawing</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <div id="about">
@@ -234,6 +236,10 @@
         </div>
       </div>
     </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
