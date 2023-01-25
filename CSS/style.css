@@ -45,12 +45,15 @@ h5 {
 }
 #P1 h2 {
   margin-top: 0;
+  margin-bottom: 0px;
 }
 #P2 h2 {
   margin-top: 0;
+  margin-bottom: 0px;
 }
 #P3 h2 {
   margin-top: 0;
+  margin-bottom: 0px;
 }
 body {
   background-color: rgba(242, 242, 242, 100%);
@@ -91,7 +94,7 @@ a:active {
   font-weight: 400;
   padding: 10px;
   border-radius: 5px;
-  border: 2px solid rgba(0, 21, 36, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
   transition: 0.2s opacity;
 }
 .button:visited {
@@ -125,7 +128,7 @@ a:active {
   text-decoration: none;
 }
 header {
-  background-color: rgba(251, 227, 219, 1);
+  background-color: rgba(255, 255, 255, 1);
   position: fixed;
   box-shadow: 2px 5px 11px 0px rgba(34, 34, 34, 0.46);
   -webkit-box-shadow: 2px 5px 11px 0px rgba(34, 34, 34, 0.46);
@@ -268,6 +271,11 @@ Selector {
 }
 #my-story h2 {
   text-align: center;
+  margin:0;
+}
+#my-resume nav {
+  text-align: center;
+  font-size: 1.75em;
 }
 #skills-tools h2 {
   text-align: center;
@@ -287,13 +295,17 @@ Selector {
   text-align: center;
 }
 #introduction {
-  background-color: rgba(251, 227, 219, 1);
+  background-color: rgba(0, 21, 36, 1);
   padding-top: 90px;
   display: inline-block;
   width: 100%;
 }
 #introduction h3 {
-  background-color: rgba(251, 227, 219, 1);
+  background-color: rgba(0, 21, 36, 1);
+  color: white;
+}
+#introduction p {
+  color: white;
 }
 .about-container {
   padding-top: 90px;
@@ -309,6 +321,10 @@ Selector {
   max-width: 100%;
   height: auto;
 }
+#intro p {
+  font-size: 1.25em;
+}
+
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -401,6 +417,10 @@ Selector {
   }
   nav > ul {
     margin: 1em 0;
+  }
+  .navtoggle.responsive li {
+    border-top: none;
+    padding: 0;
   }
   }
 }
