@@ -320,6 +320,9 @@ Selector {
   max-width: 100%;
   height: auto;
 }
+#prototype img {
+  width: 200px;
+}
 #intro p {
   font-size: 1.25em;
 }
@@ -390,6 +393,9 @@ Selector {
   }
   body {
     font-size: 18px;
+  }
+  .col-md-8 {
+    width: 70%;
   }
   .col-md-6 {
     width: 50%;
