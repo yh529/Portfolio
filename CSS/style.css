@@ -43,6 +43,10 @@ h5 {
   font: size 1.25em;
   font-weight: 400;
 }
+#ideate h5 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
 #P1 h2 {
   margin-top: 0;
   margin-bottom: 0px;
@@ -59,14 +63,14 @@ body {
   background-color: rgba(242, 242, 242, 100%);
   font-family: "Maitree", serif;
   font: size 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
   color: rgba(34, 34, 34, 100%);
 }
 p {
   line-height: 1.4;
   font: size 1em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 img {
@@ -326,7 +330,33 @@ Selector {
 #intro p {
   font-size: 1.25em;
 }
-
+#Prototype-link nav {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+#Prototype-link h3 {
+  text-align: center;
+}
+#contact {
+  background-color: #001524;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+#contact h2 {
+  background-color: #001524;
+  color: #ffffff;
+}
+#contact a {
+  color: #ffffff;
+}
+#contact a:visited {
+  color: #ffffff;
+}
+#contact a:hover {
+  opacity: 0.6;
+}
 @keyframes color-change {
   0% {
     fill: #edc655;
